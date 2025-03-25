@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mood-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.mood {
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.mood:hover {
+    transform: scale(1.2);
+}
+
+canvas {
+    margin-top: 30px;
+    width: 90vw;
+    max-width: 600px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
